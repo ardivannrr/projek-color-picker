@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+}
+
+.box-color {
+  width: 500px;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 10px 2px 3px rgba(0, 0, 0, 0.3);
+  gap: 20px;
+}
+
+.box-color .box-color-value {
+  width: 400px;
+  height: 100px;
+  transition: 0.3s linear;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 450px) {
+  .box-color {
+    width: 300px;
+  }
+
+  .box-color .box-color-value {
+    width: 250px;
+  }
+}
